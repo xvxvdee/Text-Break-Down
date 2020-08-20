@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Break Down</title>
+    <link rel="stylesheet" href="wordCountStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="input">
+      <h1>LET'S TEAR IT APART!</h1>
+      <textarea name="userText" id="userText">
+Remember to remove all white spaces from the end of the text! Enter text...</textarea
+      >
+      <div>
+        <button type="submit" id="analyze">
+          <img src="data-file-upload.png" />
+        </button>
+        <button type="submit" id="reset">
+          <img src="data-file-bars-refresh.png" />
+        </button>
+      </div>
+      <div class="footer">
+        <a
+          href="https://www.streamlineicons.com/"
+          target="_blank"
+          alt=" Free Icons from the Streamline Icons Pack"
+        >
+          Free Icons from the Streamline Icons Pack</a
+        >
+      </div>
+    </section>
+
+    <section id="breakdown">
+      <h2>The Breakdown</h2>
+      <div class="info">
+        <h3>Character(s):</h3>
+        <span id="characters">-</span>
+      </div>
+      <div class="info">
+        <h3>Word(s):</h3>
+        <span id="words">-</span>
+      </div>
+      <div class="info">
+        <h3>Sentence(s):</h3>
+        <span id="sentences">-</span>
+      </div>
+      <div class="info">
+        <h3>Paragraph(s):</h3>
+        <span id="paragraphs">-</span>
+      </div>
+
+      <div id="uniqueContainer">
+        <h3>Unique Word(s):<span id="uniqueWords">-</span></h3>
+        <div id="uniqueInfo">
+          <p><b>Word : </b> <span id="wordChange">-</span></p>
+          <p><b>Count : </b><span id="wordCount">-</span></p>
+        </div>
+        <span class="buttons">
+          <button type="button" id="backwards" name="backwards" disabled>
+            <img src="arrow-circle-left.png" />
+          </button>
+          <button type="button" id="forward" name="foward" disabled>
+            <img src="arrow-circle-right.png" />
+          </button>
+        </span>
+      </div>
+    </section>
+
+    <script src="wordCountScript.js"></script>
+  </body>
+</html>
