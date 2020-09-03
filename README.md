@@ -1,5 +1,5 @@
 
-![visuals](breakItDOWN.jpg)
+![visuals](breakItD.jpg)
 # Text-Break-Down
 A webapp that can take text in and break it down. Counts characters, words, sentences, paragraphs. Also counts how many times a word appears.
 
